@@ -8,6 +8,7 @@ metadata:
     app.kubernetes.io/part-of: sonarqube
   name: sonarqube-data
 spec:
+  storageClassName: ocs-storagecluster-cephfs
   accessModes:
     - ReadWriteOnce
   resources:
